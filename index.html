@@ -81,7 +81,7 @@
             padding: 6px;
             border-radius: 12px;
             transition: opacity 0.3s ease;
-            object-fit: contain; /* Ensures QR doesn't stretch */
+            object-fit: contain;
         }
 
         .qr-dl-btn {
@@ -163,11 +163,12 @@
 
         <div class="tile col-12" style="background: linear-gradient(135deg, rgba(204, 255, 0, 0.08), transparent);">
             <span class="label">Total Amount</span>
-            <div class="amount">₹400</div>
+            <div class="amount">₹600</div>
         </div>
 
         <div class="tile col-8">
             <span class="label">Deliverables</span>
+            
             <div class="work-item">
                 <div style="display: flex; align-items: center;">
                     <img src="Images/thumbnail1.jpg" alt="thumbnail 1" class="work-thumb">
@@ -178,6 +179,7 @@
                 </div>
                 <span style="font-weight: 800;">₹200</span>
             </div>
+
             <div class="work-item">
                 <div style="display: flex; align-items: center;">
                     <img src="Images/thumbnail2.jpg" alt="thumbnail 2" class="work-thumb">
@@ -188,6 +190,18 @@
                 </div>
                 <span style="font-weight: 800;">₹200</span>
             </div>
+
+            <div class="work-item">
+                <div style="display: flex; align-items: center;">
+                    <img src="Images/thumbnail3.jpg" alt="thumbnail 3" class="work-thumb">
+                    <div>
+                        <p style="font-weight:600;">New Year Flow 2026</p>
+                        <p style="font-size: 0.75rem; color: var(--text-dim);">Reaction Video</p>
+                    </div>
+                </div>
+                <span style="font-weight: 800;">₹200</span>
+            </div>
+
         </div>
 
         <div class="tile col-4" style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem;">
@@ -204,7 +218,7 @@
 
     <script>
         function downloadQR() {
-            // Ensure this path matches EXACTLY: 'Images' (Capital I) and 'pay.png' (lowercase)
+            // Ensure this path matches EXACTLY: 'Images' (Capital I) and 'pay.png'
             const qrImageUrl = 'Images/pay.png';
             
             const link = document.createElement('a');
